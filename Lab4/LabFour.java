@@ -35,7 +35,7 @@ class Lab4 {
             integerList.set(j + 1, key);
         }
         long insertionEnd = System.nanoTime();
-        System.out.println("\nInsertion Sort Time: " + (insertionEnd - insertionStart) + " nanoseconds.");
+        System.out.println("\nInsertion Sort Time: " + (insertionEnd - insertionStart) / 1000000.0 + " miliseconds.");
         return integerList;
     }
 
@@ -55,7 +55,7 @@ class Lab4 {
             }
         }
         long bubbleEnd = System.nanoTime();
-        System.out.println("\nBubble Sort Time: " + (bubbleEnd - bubbleStart) + " nanoseconds.");
+        System.out.println("\nBubble Sort Time: " + (bubbleEnd - bubbleStart) / 1000000.0 + " miliseconds.");
         return integerList;
     }
 
